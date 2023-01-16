@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+    <nav>
+        <h1>ROCK PAPER SCISSORS</h1>
+    </nav>
+
+    <div class="game-section">
+        <div class="container">
+            <div class="infobar">
+                <h2 class="score-info" id="scoreInfo">CHOOSE YOUR FIGHTER</h2>
+                <h3 class="score-message" id="scoreMessage">Best of 5</h3>
+            </div>
+
+            <div class="outputcontainer">
+                <div class="score-gui">
+                    <div class="choice" id="playerChoice"></div>
+                    <img src="/images/p1chardefault.png" id="pchoiceImage"></img>  
+                    <p class="score" id="playerScore">Player: 0</p>
+                </div>
+
+                <h1>VS</h1>
+                <div class="score-gui">
+                    <div class="choice" id="computerChoice"></div>
+                    <img src="/images/p2chardefault.png" id="cchoiceImage"></img>       
+                    <p class="score" id="computerScore">Computer: 0</p>
+                </div>
+                
+            </div>
+        
+            <div class="inputcontainer">
+                <h1>CHARACTER SELECT</h1>
+                <button class="btn-rps" id="btnReptile">
+                    <div class="charSelect">
+                        <img src="/images/reptile.png">
+                    </div>
+                </button>
+
+                <button class="btn-rps" id="btnChunLi">
+                    <div class="charSelect">
+                        <img src="/images/chunli.jpg">
+                    </div>
+                </button>
+
+                <button class="btn-rps" id="btnScorpion">
+                    <div class="charSelect">
+                        <img src="/images/scorpion.png">
+                    </div>
+                </button>
+
+                <button class="btn-rps" id="btnOgre">
+                    <div class="charSelect">
+                        <img src="/images/ogre.jpg">
+                    </div>
+                </button>
+
+                <button class="btn-rps" id="btnYasuo">
+                    <div class="charSelect">
+                        <img src="/images/yasuo.jpg">
+                    </div>
+                </button>
+
+                <button class="btn-rps" id="btnSett">
+                    <div class="charSelect">
+                        <img src="/images/sett.jpg">
+                    </div>
+                </button>
+
+            </div>
+        </div>
+    </div>
+
+
+    <footer>
+        <h4>MADE BY ZELE FAM</h4>
+    </footer>
+
+    <div class="pop-up-msg" id="gameOverPopUp">
+        <p class="pop-up-title" id="gameOverMsg"></p>
+        <button class="btn-restart" id="btnRestart">CONTINUE</button>
+    </div>
+    <div class="overlay" id="overlay"></div>
+    
+
+    <script src="script.js"></script>
+
+    
+</body>
+</html>
